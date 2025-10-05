@@ -1,0 +1,175 @@
+body {
+    text-align: center;
+    font-family: 'Happy Monkey', cursive;
+    background: linear-gradient(#a2d2ff, #EFB0C9);
+    color: #ffffff;
+}
+
+h1, h2, h3, h4, p {
+    text-shadow: 0 0 1px black; 
+}
+
+#bff-img {
+    width: 150px;
+    border-radius: 50%;
+    border: 6px solid #EFB0C9;
+    margin-bottom: 10px;
+}
+
+#bday-age {
+    background: #EFB0C9;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px 0 10px 0;
+}
+
+#bday-date {
+    margin: 0;
+    background: #EFB0C9;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gift-section {
+    margin-top: 50px;
+}
+
+.gift-title {
+    margin-bottom: 10px;
+}
+
+.gift-hint {
+    margin-top: 0;
+}
+
+#gift-img-cheers {
+    height: 200px;
+}
+
+.gift-img {
+    margin: 20px auto;
+    max-width: 400px;
+    height: 400px;
+    border: 6px solid white;
+    border-radius: 10px;
+    background-image: url("images/gift-cover.jpg");
+    background-size: cover;
+}
+
+#gift-img-happy:hover {
+    background-image: url("images/happy.gif");
+}
+
+#gift-img-hot:hover {
+    background-image: url("images/hot.gif");
+}
+
+#gift-img-genius:hover {
+    background-image: url("images/genius.gif");
+}
+
+#gift-img-badass:hover {
+    background-image: url("images/badass.gif");
+}
+
+#gift-img-cheers:hover {
+    background-image: url("images/cheers.gif");
+}
+
+#footer {
+    font-style: italic;
+    width: 400px;
+    margin: 40px auto 20px;
+}
+
+a {
+    color: white;
+}
+
+/* Confetti colors */
+.confetti {
+  position: fixed;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  background-color: red; /* Will be randomized in JS */
+  opacity: 0.8;
+  border-radius: 50%;
+  animation-name: confettiFall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes confettiFall {
+  0% {
+    transform: translateY(-10px) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Balloons floating up */
+.balloon {
+  position: fixed;
+  bottom: -150px;
+  background-color: red; /* Will be randomized */
+  width: 40px;
+  height: 60px;
+  border-radius: 20px 20px 25px 25px / 60px 60px 40px 40px;
+  opacity: 0.8;
+  animation-name: floatUp;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
+
+/* Sparkling text */
+@keyframes sparkle {
+  0%, 100% {
+    text-shadow:
+      0 0 5px #fff,
+      0 0 15px #ff69b4,
+      0 0 20px #ff69b4,
+      0 0 28px #ff1493,
+      0 0 40px #ff1493;
+  }
+  50% {
+    text-shadow:
+      0 0 2px #fff,
+      0 0 8px #ff69b4,
+      0 0 10px #ff69b4,
+      0 0 14px #ff1493,
+      0 0 20px #ff1493;
+  }
+}
+
+#header h1 {
+  animation: sparkle 2s infinite ease-in-out;
+}
+
+/* Hover glow on images */
+.gift-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px 5px #ff69b4;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
