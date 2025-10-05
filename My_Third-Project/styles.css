@@ -1,0 +1,171 @@
+/* Nostalgic color palette with warm and muted earth tones */
+:root {
+    --color-bg: #f4ead5;
+    --color-bg-alt: #e2d5b7;
+    --color-text: #5b4636;
+    --color-text-alt: #836953;
+    --color-accent: #a9746e;
+    --color-hover: #c9b49a;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-image: url('images/Philippines.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: var(--color-text);
+    padding: 20px;
+}
+
+/* Container with max width and centered */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: rgba(244, 234, 213, 0.85);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(101, 91, 75, 0.3);
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.title {
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: var(--color-accent);
+}
+
+.subtitle {
+    font-size: 1.3rem;
+    font-weight: 400;
+    max-width: 600px;
+    margin: 0 auto 20px;
+    color: var(--color-text-alt);
+}
+
+.btn {
+    background-color: var(--color-accent);
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+
+.btn:hover {
+    background-color: var(--color-hover);
+}
+
+/* Activities Section with flexbox */
+.activities {
+    margin-top: 30px;
+}
+
+.activities h3 {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.activity-images {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.activity-img {
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(101, 91, 75, 0.4);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.activity-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(101, 91, 75, 0.6);
+}
+
+/* Guide Section */
+.guide {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.guide h3 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.guide p {
+    font-style: italic;
+    max-width: 700px;
+    margin: 0 auto 15px;
+    color: var(--color-text-alt);
+}
+
+.guide-img {
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: 0 3px 12px rgba(101, 91, 75, 0.5);
+}
+
+/* New Memories Section */
+.memories {
+    margin-top: 50px;
+    padding: 25px;
+    background-color: var(--color-bg-alt);
+    border-radius: 12px;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 0 10px rgba(101, 91, 75, 0.3);
+}
+
+.memories h3 {
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--color-accent);
+}
+
+.memories p {
+    color: var(--color-text-alt);
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin-bottom: 10px;
+}
+
+.memories blockquote {
+    font-style: italic;
+    border-left: 4px solid var(--color-accent);
+    padding-left: 15px;
+    color: var(--color-text);
+}
+
+/* Nostalgic theme toggle styles */
+.nostalgic {
+    --color-bg: #2f1b0c;
+    --color-bg-alt: #46331b;
+    --color-text: #d0b084;
+    --color-text-alt: #c6aa6b;
+    --color-accent: #a67c52;
+    --color-hover: #d7c49e;
+}
+
+.nostalgic body {
+    background-image: url('images/nostalgic-bg.jpg');
+}
+
+/* Adjust container background in nostalgic */
+.nostalgic .container {
+    background-color: rgba(47, 27, 12, 0.85);
+    box-shadow: 0 0 20px rgba(214, 182, 133, 0.6);
+}
+
